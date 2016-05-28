@@ -1,7 +1,7 @@
 require 'formula'
 
 HOMEBREW_STNS_PASSWD_VERSION='0.1.0'
-class Pt < Formula
+class Stns_Passwd < Formula
   homepage 'https://github.com/STNS/stns-passwd'
   url "https://github.com/STNS/stns-passwd/releases/download/v#{HOMEBREW_STNS_PASSWD_VERSION}/stns_darwin_amd64.zip"
   sha1 'b110438b0852dc3ebfa7a33be33ae087e0199024'
@@ -9,7 +9,6 @@ class Pt < Formula
   head 'https://github.com/STNS/stns-passwd.git', :branch => 'master'
 
   depends_on 'go' => :build
-  depends_on 'hg' => :build
 
   def install
     ENV['GOPATH'] = buildpath
