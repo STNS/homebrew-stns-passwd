@@ -8,13 +8,8 @@ class Stns_Passwd < Formula
   version HOMEBREW_STNS_PASSWD_VERSION
   head 'https://github.com/STNS/stns-passwd.git', :branch => 'master'
 
-  depends_on 'go' => :build
-
   def install
-    ENV['GOPATH'] = buildpath
-    system 'go', 'get', 'github.com/STNS/libnss_stns/hash'
-    system 'go', 'build', '-o', 'stns-passwd'
-    bin.install 'stns-passwd'
+    bin.install Dir['bin/*']
   end
 end
 
