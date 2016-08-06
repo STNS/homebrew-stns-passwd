@@ -1,10 +1,10 @@
 require 'formula'
 
-HOMEBREW_STNS_PASSWD_VERSION='0.1.0'
+HOMEBREW_STNS_PASSWD_VERSION='0.2.0'
 class StnsPasswd < Formula
   homepage 'https://github.com/STNS/stns-passwd'
   url "https://github.com/STNS/stns-passwd/releases/download/#{HOMEBREW_STNS_PASSWD_VERSION}/stns_darwin_amd64.zip"
-  sha256 '81df1a4e716ea23051c298f189f0dd6c0cb82b7377972463a1e8c1fdeacccc35'
+  sha256 'd1bac8ac45f784e31f768cd3b18a6214992dc6aaea234b0f31cc86af4ee7d6f9'
   version HOMEBREW_STNS_PASSWD_VERSION
   head 'https://github.com/STNS/stns-passwd.git', :branch => 'master'
 
