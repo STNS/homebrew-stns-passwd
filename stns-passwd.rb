@@ -2,9 +2,9 @@
 class StnsPasswd < Formula
   desc "STNS Password Management Command"
   homepage "https://github.com/STNS/stns-passwd"
-  url "https://github.com/STNS/stns-passwd/releases/download/0.3.1/stns-passwd_0.3.1_darwin_amd64.tar.gz"
-  version "0.3.1"
-  sha256 "356e5965c5d9ba309f5c435761f19dd4f846e924c98cb058bd05c3a46b5a48cf"
+  url "https://github.com/STNS/stns-passwd/releases/download/0.4.0/stns-passwd_0.4.0_darwin_amd64.tar.gz"
+  version "0.4.0"
+  sha256 "b6b4e8e35628dd56bfa7978925ce0b13869172a48844ab8122196b8298109ec8"
 
   def install
     bin.install 'stns-passwd'
